@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- <h2>What Can JavaScript Do?</h2>
+
+ js html içeriğini değiştirebilir -->
+<!-- <p id="demo">JavaScrip can change HTML content.</p> -->
+<!-- <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button> -->
+<!-- <button type="button" onclick='document.getElementById("demo").innerHTML= "hello world!"'>click me</button> -->
+<br><br>
+
+
+
+<!-- js html stillerini değiştireblir -->
+<!-- <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">turn on the light</button> -->
+<!-- <img id="mtImage"src="pic_bulbof.gif"style="width:100px"> -->
+<!-- <button onclick="document.getElementById('myImage').src='pic_bulbof.gif'">turn off the light</button> -->
+
+
+
+<!-- js html ögelerini gizleyebilir -->
+<!-- <h2>what can JavaScript do?</h2>
+<p id="demo">JavaScrip can change the style of an HTML element</p>
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Big font</button>
+<button type="button" onclick="document.getElementById('demo').style.fontSize='20px'">little font</button> -->
+
+
+
+<!-- js html ögelerini gösterebilir -->
+<!-- <p id="demo">JavaScrip can hide HTML elements</p> -->
+<!-- <button type="button" onclick="document.getElementById('demo').style.display='none'">trust me</button>
+<p id="demo" style="display: none">JavaScrip can show hidden HTML elements</p>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">click me</button> -->
+
+
+<!-- script etiketi -->
+<!-- <p id="demo">hello</p>
+<script>
+document.getElementById('demo').innerHTML="hello"
+</script> -->
+
+
+
+<!-- head'de arasında javaScript -->
+<!-- <head>
+    <script>
+        function myFuntion(){
+            document.getElementById("demo").innerHTML="paragraph changed";
+
+            document.getElementById("demo2").innerHTML="a pragraph.";
+        }
+    </script>
+</head>
+<p id="demo">a paragraph.</p>
+
+<p id="demo2">pragraph changed</p>
+
+<button type="button" onclick="myFuntion()">try it</button> -->
+
+
+
+<!-- body arasında JavaScrip
+<p id="demo">A paragraph.</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<script>
+    function myFunction(){
+
+        document.getElementById('demo').innerHTML="pargraph changed.";
+    }
+</script> -->
+
+
+
+<!-- harici javascript avantajları
+<script>
+    function myFunction(){
+        document.getElementById('demo').innerHTML="pargraph chaned"
+    }
+</script>
+<p id="demo">A paragraph</p>
+<button type="button" onclick="myFunction()">try it</button>
+<p>this exemple links to "myScript.js</p>
+<p>(myFunction is stored in "myFunction.js")</p>
+<script src="myScript.js"></script> -->
+
+
+<!-- dosyadan veri çekme
+ <script>
+    function myFunction(){
+        document.getElementById('demo').innerHTML="pargraph changed"
+    }
+</script>
+<p id="demo">A paragraph</p>
+<button type="button" onclick="myFunction()">click me</button>
+<p>bu örnek "myScript.js"de bağlantı vermek için tam bir web URL'si kullanılır.</p>
+<p>(myFunction "myScript.js"de saklanır)</p>
+<script src="/deneme.js"></script> -->
+
+
+
+<!-- klasörden veri çekmek 
+<p id="demo">A paragraph.</p>
+<button type="button" onclick="myFunction()">tr it</button>
+<p>Bu örnek, "myScript.js" dosyasına bağlamak için bir dosya yolu kullanılır.</p>
+<p>(myFunction "myScript.js"de saklanır)</p>
+<script src="/js/myScript.js"></script>
+<script>
+    function myFunction(){
+        document.getElementById('demo').innerHTML="paragraph changed"
+    }
+</script>-->
+
+
+<!-- saklanıcak veri mScript'de saklanır
+<p id="demo">A paragraph</p>
+<button type="button" onclick="myFunction">try it</button>
+<p>bu örnek "myScrip.js"ye bağlantı verir.</p>
+<p>(myFunction "myScript.js"ye saklanır)</p>
+<script src="myScript.js"></script>
+<script>
+    function myFunction(){
+        document.getElementById('demo').innerHTML="paragraph changed"
+    }
+</script> -->
+
+
+
+
+<!--<h2>my first web page</h2>
+<p>m first paragraph.</p>
+ innerHTML kullanımı
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML=20+55
+</script> -->
+
+
+<!-- document.write işlevini kullanma
+<p>belgenin yüklemesi tamamlandıktan sonra asla document.write'ı çağırma.Tüm belgenin üzerine yazacaktır.</p>
+<script>
+    document.write(6+9);
+</script> -->
+
+
+<!-- document.write kullanımı button hali
+<button type="button" onclick="document.write(5+9)">try it</button> -->
+
+
+
+<!-- window.alert() işlevinin kullanma
+<script>window.alert(7+98)</script> -->
+
+
+<!-- window.alert() işlevinin kullanımı
+<script>window.alert(78/6)</script> -->
+
+
+<!-- console.log işlevinin kullanımı çıkan sonuç console den gözükür
+<p>klavyenizdeki f12 hata ayıklamayı etkinleştirecektir</p>
+<p>ardından hata ayıklayıcı menüsünde "konsol"u seçin</p>
+<p>ardından tekrar çalıştır'a tıklatın</p>
+<script>console.log(87+65)</script> -->
+
+
+<!-- sayfayı yazdırmak için kullanılır
+<p>Geçerli sayfaı yazdırmak için düğmeye yazdır</p>
+<button onclick="window.print()">bu safayı yazdır</button> -->
+
+
+
+<!-- let ile tanımlanan değişkennin değerini güncelleyebiliriz ama değişkeni tekrar tanımlayamayız
+<h2>JavaScrip ifadeleri</h2>
+<p>bir<b>javaScript programı</b>bir bilgisayar tarafından yürütülecek<b>ifadelerin</b>listesidir.</p>
+<p id="demo"></p>
+<script>
+    let x, y, z;
+    x=5;
+    y=7;
+    z=x+y;
+
+    document.getElementById("demo").innerHTML="z nin değeri"+z+".";
+</script> -->
+
+
+
+<!-- javaScript ifadeleri
+<p id="demo"></p>
+<script>document.getElementById("demo").innerHTML="hello dolly";
+</script> -->
+
+
+
+<!-- noktalı virgül kullanımı
+<p id="demo"></p>
+<script>
+    let a, b, c;
+    a=5;
+    b=9;
+    c=a+b;
+    document.getElementById("demo").innerHTML=c;
+</script> -->
+
+
+
+<!-- noktalı virgül kullanımı
+<p>bir satırda birden fazla ifadeye izin verilir.</p>
+<p id="demo"></p>
+<script>
+  let a,b,c;
+  a=7; b=9; c=a+b;
+  document.getElementById("demo").innerHTML=c;
+</script> -->
+
+
+
+<!-- javaScript satır uzunluğu ve satır sonları
+<p>bir kod satırını kırmak için en iyi yer bir işlecin veya virgülün sonrasıdır</p>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML="hello dolly";
+</script> -->
+
+
+<!-- javaScript ifadeleri küme parantezleri "{}" içinde kod blokları halinde gruplandırılabilir
+<p>javaScript kod blokları {ile} arasında yazılır</p>
+<button type="button" onclick="myFunction()">click me</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    function myFunction(){
+        document.getElementById("demo1").innerHTML="hello dolly"
+        document.getElementById("demo2").innerHTML="how are you"
+    }
+</script> -->
+
+
+
+<!-- javaScript değişmez değerleri sayılar
+<p>sayı ondalıklı veya ondalıksız kullanılabilir</p>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML=10.50;
+</script> -->
+
+
+<!-- string'lerde tektırnak veya çift tırnak arsına yazılabilir
+<p>dizeler çift veya tek tırnak işaretiyle yazılabilir</p>
+<p id="demo"></p>
+<script>document.getElementById("demo").innerHTML="jhon doe"</script> -->
+
+
+<!-- değişkene daha sonrada değer girilebilir
+<p>bu örnek x bir değişken olarak tanımlanmıştır daha sonra x'e 6 değer atanır:</p>
+<p id="demo"></p>
+<script>
+    let x;
+    x=6;
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+<!-- javaScript operatörleri
+<p>javaScript değerleri hesaplamak için aritmetik operatörleri kullanılır (tıpkı cebirde olduğu gibi.)</p>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML=(5+7)*10;
+</script> -->
+
+
+
+<!-- javaScriptanahtar kelimeleri
+<h2><b>let</b> Anahtar kelime değişkenler yaratır</h2>
+<p id="demo"></p>
+<script>
+    let x,y;
+    x=5+6;
+    y=x*10;
+    document.getElementById("demo").innerHTML=y;
+</script> -->
+
+
+
+<p id="demo"></p>
+<script>
+    var x,y;
+    x
+    y=x*50;
+    document.getElementById("demo").innerHTML=x;
+</script>
+
+
+
+</body>
+</html>
