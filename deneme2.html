@@ -281,14 +281,99 @@ document.getElementById('demo').innerHTML="hello"
 </script> -->
 
 
-
+<!-- var ile değişken tekrar tanımlanabilir ve değer güncellenir değer almazsa ekrana undefined yazar
+<h2>Anahtar kelime değişkenler oluşturur</h2>
 <p id="demo"></p>
 <script>
     var x,y;
-    x
+    x=10+30;
     y=x*50;
-    document.getElementById("demo").innerHTML=x;
-</script>
+    document.getElementById("demo").innerHTML=y;
+</script> -->
+
+
+
+<!-- javaScript büyük harflere duyarlıdır
+<p>soyadını soyadı olarak değiştirmei deneyin</p>
+<p id="demo"></p>
+<script>
+    let lastname, lastName;
+    lastName="Doe";
+    lastname="peterson";
+    document.getElementById("demo").innerHTML=lastName;
+</script> -->
+
+
+
+<!--örnekte gibi değişken belirtilmediği halde sonucu gösterebilir 
+ <p>Örnekte x,y,z belirtilmemiştir.</p>
+<p>ilk kullanıldıklarında otomatik olarak bildirilirler</p>
+<p id="demo"></p>
+<script>
+    x=5;
+    y=9;
+    z=x+y;
+    document.getElementById("demo").innerHTML="z'nin değeri"+z;
+</script> -->
+
+
+
+<!-- x,y ve z'yi saklar sadece çıktıyı gösterir
+<p>bu örnekte x,y, ve z değişkenlerdir.</p>
+<p id="demo"></p>
+<script>
+    var x=10;
+    var y=6;
+    var z=x + y;
+    document.getElementById("demo").innerHTML="z'nin değeri"+z;
+</script> -->
+
+
+
+<!-- bir öncekş örnekle aynıdır sadece let kullanılmıştır
+<p id="demo"></p>
+<script>
+    let x=10;
+    let y=9;
+    let z=x+y;
+    document.getElementById("demo").innerHTML="z'nin değeri" +z;
+</script> -->
+
+
+
+<!-- bir önceki örnekle anıdır sadee let yerine const kullanılmıştır
+<p id="demo"></p>
+<script>
+    const x=20;
+    const y=9;
+    const z=x*y;
+    document.getElementById("demo").innerHTML="z'nin değeri" +z;
+</script> -->
+
+
+<!-- bir önceki örneklerin karma şekli 
+<p>Bu örnekte fiyat1, fiyat2 ve toplam değişkenlerdir.</p>
+<p id="demo"></p>
+<script>
+    const fiyat1=9;
+    const fiyat2=7;
+    let toplam =fiyat1+fiyat2;
+    document.getElementById("demo").innerHTML="toplam" +toplam; 
+</script> -->
+
+
+
+<!-- <p>dizeler tırnak işaretiyle yazılır.</p>
+<p>sayılar tırnak işaretleriyle olmadan yazılır</p>
+<p id="demo"></p>
+<script>
+    const pi=3.14;
+    let person="jhon wick";
+    let answer="yes I am";
+    document.getElementById("demo").innerHTML=pi + "<br>" + person + "<br>" +answer;
+</script> -->
+
+
 
 
 
