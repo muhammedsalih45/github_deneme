@@ -414,6 +414,287 @@ document.getElementById('demo').innerHTML="hello"
 </script> -->
 
 
+<!-- javaScript değişkenlerini tekrardan bildirme
+<p>bir javaScript değişkenini yeniden bildirirseniz değerini kaybetmez</p>
+<p id="demo"></p>
+<script>
+    var carName="volvo";
+    var carName;
+    document.getElementById("demo").innerHTML=carName;
+</script> -->
+
+
+
+<!-- javaScript aritmetiği
+<p>5 + 2 + 3'ün eklenmesinin sonucu</p>
+<p id="demo"></p>
+<script>
+    let x= 5+2+3;
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+<!-- javaScript aritmetiği
+<p>"Jhon" + "" + "Doe" eklemenin sonucu:</p>
+<p id="demo"></p>
+<script>
+    let x= "Jhon" + " " + "Doe";
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+<!-- javaScript aritmetiği
+<p>"5" +2 +3'ün eklenmesinin sonucu:</p>
+<p id="demo"></p>
+<script>
+    let x="5" + 2 + 3;
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+<!-- javaScript aritmetiği
+<p>2 + 3 + "5" eklemenin sonucu:</p>
+<p id="demo"></p>
+<script>
+    let x= 2 + 3 + "5";
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+<!-- dolar işareti harf gibi gözükür 
+<p>dolar işareti javaScript adlarında harf gibi değerlendirilir.</p>
+<p id="demo"></p>
+<script>
+    let $$$=2;
+    let $myMoney=5;
+    document.getElementById("demo").innerHTML=$$$ + $myMoney;
+</script> -->
+
+
+
+<!-- alt çizgi harf gibi gözükür
+<p>alt çizgi javaScript adlarında harf gibi değerlendirilir.</p>
+<p id="demo"></p>
+<script>
+    let _x=9;
+    let _100=5;
+    document.getElementById("demo").innerHTML=_x + _100;
+</script> -->
+
+
+
+<!-- var'da bir değişkene birden fazla veri girilirse en son girilen değeri yazdırır
+<p>var kullanarak bir değişkeni yeniden bildirmek</p>
+<p id="demo"></p>
+<script>
+    var x=2;
+    {
+        var x=30;
+    }
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+<!-- let sadece bir değişken alır değişkenin değerini değiştiremzsin
+<p>bir değişkeni let kullanarak yeniden bildirmek.</p>
+<p id="demo"></p>
+<script>
+    let x=10;
+    {
+        let x=49;
+    }
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+<!-- <p>Bir javaScript değişkenin <b>var</b> ile yaniden bildirilmesine programın herhangi bir yerinde izin verilir:</p>
+<p id="demo"></p>
+<script>
+    var x=9;
+    
+    var x=56;
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+<!-- let'de sadece bir tane değişken tanmlanır
+<p>bir değişkenin başka bir kapsamda veya başka bir blokta <b>let</b> ile yeniden bildirilmesine izin verilir: </p>
+<p id="demo"></p>
+<script>
+    let x=2;
+    {
+        let x=7;
+    }
+    {
+        let x=9;
+    }
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+<!-- değişken en sonda tanımlanabilir kullanılabilir
+<p><b>var</b> ile bir değişkeni bildirmeden önce kullanabilirsiniz:</p>
+<p id="demo"></p>
+<script>
+    carName="volvo";
+    document.getElementById("demo").innerHTML=carName;
+    var carName;
+</script> -->
+
+
+<!-- let'le değişken bildirilmeden kullanılmaz
+<p><b>let</b> ile bir değişkeni bildirilmeden önce kullanamazsınız.</p>
+<p id="demo"></p>
+<script>
+    try{
+        carName = "Saab";
+        let carName="volvo";
+    }
+    catch(err){
+        document.getElementById("demo").innerHTML=err;
+    }
+</script> -->
+
+
+
+<!-- Bir const değişken tekrar atanamaz
+<p id="demo"></p>
+<script>
+    try{
+        const PI =3.141592653589793;
+        PI =3.14;
+    }
+    catch (err){
+        document.getElementById("demo").innerHTML=err;
+    }
+</script> -->
+
+
+
+<!-- dizide hem ekleyip hemde değişiklik yapılabilir
+<p>Sabit bir dizi bildirmek elemanları değiştilemez yapmaz:</p>
+<p id="demo"></p>
+<script>
+    //Bir dizi oluştur
+    const cars =["Saab","Volvo","BMW"];
+
+    //Bir ögeyi değiştirin:
+    cars [0] ="Toyota";
+
+    //Bir öge ekleyin:
+    cars . push("Audi");
+
+    //Bir diziyi göster:
+    document.getElementById("demo").innerHTML=cars;
+</script> -->
+
+
+<!-- sabit diziler tekraratanmaz
+<p>Bir sabit diziyi yeniden atayamazsınız:</p>
+<p id="demo"></p>
+<script>
+    try{
+        const cars=["Saab","Volvo","BMW"];
+        cars =["Toyota","Volvo","Audi"];
+    }
+    catch (err){
+        document.getElementById("demo").innerHTML=err;
+    }
+</script> -->
+
+
+<!-- Doğru bir yazılıştır
+<p>sabit bir nesne bildirmek nesnelerin özelliklerini değiştirilemez HALE GETİRMEZ</p>
+<p id="demo"></p>
+<script>
+    //Bir nesne oluştur
+    const car={type: "Fiat", model: "500", color : "beyaz"};
+
+    //Bir özelliği değiştir:
+    car.owner ="jhonson";
+
+    //özelliği göster:
+    document.getElementById("demo").innerHTML="car owner is " + car.owner;
+</script> -->
+
+
+<!-- aşağıdaki örnek üstteki örneğin yanlış yazlışıdır
+<p>Sabit bir nesneyi yeniden atayamazsınız:</p>
+<p id="demo"></p>
+<script>
+    try{
+        const car={type: "Fiat", model: "500", color : "beyaz"};
+        car ={type: "Volvo", model:"EX60",color:"red"};
+    }
+    catch(err){
+       document.getElementById("demo").innerHTML=err;   
+    }
+</script> -->
+
+
+
+<!-- 
+<p>javaScript const değişkenleriblok kapsamına sahiptir.</p>
+<p id="demo"></p>
+<script>
+    const x=10;
+    //Burada x 10'dur
+    {
+        const x=68;
+        //Burada x 68'dir
+    }
+    document.getElementById("demo").innerHTML="x eşittir" + x;
+</script> -->
+
+
+<!-- bir değişken bildirmeden önce kullanılır 
+<p><b>var</b> ile bir değişken bildirilmeden önce kullanabilirsiniz:</p>
+<p id="demo"></p>
+<script>
+    carName ="volvo";
+    document.getElementById("demo").innerHTML=carName;
+    var carName;
+</script> -->
+
+
+<!-- bu örnek yukardakinin yanlış olanıdır
+<p><b>const</b> ile bir değişkeni bildirmeden önce kullanamazsınız</p>
+<p id="demo"></p>
+<script>
+    try{
+        alert(carName);
+        const carName="volvo";
+    }
+    catch(err){
+        document.getElementById("demo").innerHTML=err;
+    }
+</script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
