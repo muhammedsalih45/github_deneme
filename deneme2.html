@@ -1011,9 +1011,321 @@ document.getElementById("demo").innerHTML=z;
 
 
 
+    <!-- <script>
+        var tarih = new Date();
+        var gun =tarih.getDay();
+        switch(gun){
+            case 0:
+            alert("pazar");
+            break;
+            case 6: 
+            alert("cumartesi");
+            break;
+            default:
+            alert("henüz hafta sonu değil");       
+        }
+    </script> -->
 
 
-    
+
+    <!-- <script>
+        var tarih = new Date();
+        var gun = tarih.getDay();
+        switch(gun){
+            default:
+                alert("henüz hatasonu değil");
+                break;
+                case 0:
+                    alert("pazar");
+                    break;
+                    case 6:
+                        alert("cumartesi");
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        var tarih = new Date();
+        var gun = tarih.getDay();
+        switch (gun) {
+            case 4:
+            case 5:
+                alert("hafta sonuna az kaldı");
+                break;
+            case 0:
+            case 6:
+                alert("hafta sonu");
+                break;
+            default:
+                alert("henüz hafta sonu değil");
+        }
+    </script> -->
+
+
+    <!-- <script>
+        var a = 3;
+        switch (a / 3) {
+            case 1:
+                alert("case 1 çalıştı");
+                break;
+            case 2:
+                alert("case 2 çalıştı");
+                break;
+            case 3:
+                alert("case 3 çalıştı");
+                break;
+            case 4:
+                alert("case 4 çalıştı");
+                break;
+            default:
+                alert("default case")
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        var meyve="şeftali";
+        switch (meyve){
+            case "kiraz":
+            alert("yaz meyvesi");break;
+            case "mandalin":
+            alert("kış meyvesi");break;
+            case "erik":
+            alert("bahar meyvesi");break;
+            case "şeftali":
+            alert("yaz meyvesi");break; 
+            default: alert("herhangi bir mevsimin meyvesi");  
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        var meyve = "kiraz";
+        switch (meyve) {
+            case "kiraz":
+            case "karpuz":
+            case "şeftali":
+                alert("yaz meyvesi"); break;
+            case "mandalin":
+            case "portakal":
+            case "greyfurt":
+                alert("kış meyvesi");break;
+            case "erik":
+            alert("ilkbahar meyvesi");break;
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        var sonuc;
+        var islem="*";
+        var i1=100;
+        var i2=90;
+
+        switch(islem){
+            case "+": sonuc=i1 +i2; break;
+            case "-": sonuc=i1 -i2; break;
+            case "*": sonuc=i1 *i2; break;
+            case "/": sonuc=i1 /i2; break;
+            default: sonuc=$i1 / $i2;
+        }
+        alert("sonuç..." + sonuc);
+    </script> -->
+
+
+
+
+
+    <!-- <style>
+        .hesapMakinesi{
+            margin:0 auto;
+            width:350px;
+            height:auto;
+            background-color:slategray;
+            border-radius:5px;
+            padding:10px;
+        }
+        #ekran{
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+        }
+        #sonuc{
+            padding:10px;
+            width: 90%;
+            border: none;
+            border-radius:5px;
+            text-align: right;
+            font-size: 50px;
+            word-wrap:break-word;
+        }
+        .sayilar{
+            text-align: center;
+        }
+        button{
+            width: 70px;
+            height: 50px;
+            margin: 4px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+            border: none;
+            outline: none;
+        }
+
+    </style>
+
+
+
+    <div class="hesapMakinesi">
+        <div id="ekran">
+            <input type="text" id="sonuc">
+        </div>
+        <div class="sayilar">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>0</button>
+            <button>*</button>
+            <button>-</button>
+            <button>+</button>
+            <button>/</button>
+            <button>=</button>
+        </div>
+    </div>
+
+    <script>
+        "use strict";
+        var _sayilar= document.getElementsByTagName("button"),_sayiUzunluk =_sayilar.length, i = 0;
+        var hesapla;
+        for(i = 0; i<_sayiUzunluk; i++){
+            _sayilar[i].onclick =hesapla;
+        }
+    </script>
+
+    <script>
+        "use strict";
+        var sonuc = document.getElementById("sonuc");
+
+        function hesapla(){
+            var deger = this.innerHTML;
+
+            if(deger == "="){
+                try{
+                    sonuc.value = eval(sonuc.value);
+                }catch(e){
+                    sonuc.value = "0";
+                }
+                return;
+            }
+            sonuc.value += deger;
+        }
+    </script>
+
+    <script>
+        "use strict";
+        var _sayilar = document.getElementsByTagName("butoon");
+        _sayiUzunluk = _sayilar.length, i = 0, sonuc = document.getElementById("sonuc");
+        for (i = 0; i<_sayiUzunluk; i++){
+            _sayilar[i].onclick = hesapla;
+        }
+
+        function hesapla(){
+            var deger = this.innerHTML;
+
+            if(deger == "="){
+                try{
+                    sonuc.value = eval(sonuc.value);
+                }catch(e){
+                    sonuc.value= "0";
+                }
+                return;
+            }
+            sonuc.value += deger;
+        }
+    </script> -->
+
+
+
+
+    <!-- <label for="küçük sayı :"></label>
+    <input type="number" id="sayi1">
+
+    <select id="islem">
+        <option value="topla">+</option>
+        <option value="cikar">-</option>
+        <option value="carp">*</option>
+        <option value="bol">/</option>
+    </select>
+
+    <label>büyük sayı :</label>
+    <input type="number" id="sayi2">
+
+    <button id="button">sonucunu bul</button>
+
+    <div id="sonuc"></div>
+
+    <script>
+        var sonuc;
+        function hesapla() {
+            var sayi1 = document.getElementById("sayi1").value;
+            var sayi2 = document.getElementById("sayi2").value;
+            var sayi3 = document.getElementById("islem").value;
+
+            var s1 = Number(sayi1);
+            var s2 = Number(sayi2);
+
+            if (islem == 'toplam')
+                sonuc = s1 + s2;
+            else if (islem == 'cikar')
+                sonuc = s1 - s2;
+            else if (islem == 'carp')
+                sonuc = s1 * s2;
+            else
+                sonuc = s1 / s2;
+
+                document.getElementById("sonuc").innerHTML = "sonuc : " + sonuc;
+        }
+        var hesapla;
+        var esaplaBtn=document.getElementById("buton");
+        hesaplaBtn.onclick=hesapla;
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
