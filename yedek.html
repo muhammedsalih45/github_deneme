@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <style>
-    html {
+     html {
         height: 100%;
     }
 
@@ -21,41 +21,35 @@
     .container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content:center;
         text-align: center;
     }
 
     .button1 {
         width: 80px;
         height: 50px;
-
-        /* margin-left: 250px;
-        margin-top: 250px; */
     }
 
     .button2 {
         width: 80px;
         height: 50px;
-        /* margin-left: 60px;
-        margin-top: 60px; */
     }
 
     .clear {
         width: 80px;
         height: 50px;
         margin-top: 10px;
-        /* margin-left: 320px;
-        margin-top: 40px; */
     }
 </style>
 
 <body>
-    <div class="container">
+    <!-- ekrana yazı getirme ve silme -->
+        <div class="container">
         <div>
             <p id="demo"></p>
         </div>
         <div>
-            <button class="button1 text" type="button"
+            <button class="button1" type="button"
                 onclick='document.getElementById("demo").innerHTML="hello javaScript"'>Button1</button>
             <button class="button2" type="button"
                 onclick='document.getElementById("demo").innerHTML="see you javaScript"'>Button2 </button>
@@ -63,8 +57,8 @@
         <div>
             <button type="reset" class="clear" onclick='document.getElementById("demo").innerHTML=""'>Clear</button>
         </div>
-    </div>
 
+    </div>
 </body>
 
 </html>

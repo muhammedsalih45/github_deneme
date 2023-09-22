@@ -11,28 +11,28 @@
 
 
 <!-- js html stillerini değiştireblir -->
-<!-- <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">turn on the light</button> -->
-<!-- <img id="mtImage"src="pic_bulbof.gif"style="width:100px"> -->
-<!-- <button onclick="document.getElementById('myImage').src='pic_bulbof.gif'">turn off the light</button> -->
+<!-- <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">turn on the light</button>
+<img id="mtImage"src="pic_bulbof.gif"style="width:100px">
+<button onclick="document.getElementById('myImage').src='pic_bulbof.gif'">turn off the light</button> -->
+
+
+
+<!-- js html ögelerini boyutunu ayarlayabilir
+ <h2>what can JavaScript do?</h2>
+<p id="demo">JavaScrip can change the style of an HTML element</p>
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Big font</button>
+<button type="button" onclick="document.getElementById('demo').style.fontSize='15px'">little font</button> -->
 
 
 
 <!-- js html ögelerini gizleyebilir -->
-<!-- <h2>what can JavaScript do?</h2>
-<p id="demo">JavaScrip can change the style of an HTML element</p>
-<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Big font</button>
-<button type="button" onclick="document.getElementById('demo').style.fontSize='20px'">little font</button> -->
-
-
-
-<!-- js html ögelerini gösterebilir -->
-<!-- <p id="demo">JavaScrip can hide HTML elements</p> -->
-<!-- <button type="button" onclick="document.getElementById('demo').style.display='none'">trust me</button>
+<!-- <p id="demo">JavaScrip can hide HTML elements</p>
+<button type="button" onclick="document.getElementById('demo').style.display='none'">trust me</button>
 <p id="demo" style="display: none">JavaScrip can show hidden HTML elements</p>
 <button type="button" onclick="document.getElementById('demo').style.display='block'">click me</button> -->
 
 
-<!-- script etiketi -->
+<!-- script etiketi yazı yazdırma -->
 <!-- <p id="demo">hello</p>
 <script>
 document.getElementById('demo').innerHTML="hello"
@@ -45,15 +45,12 @@ document.getElementById('demo').innerHTML="hello"
     <script>
         function myFuntion(){
             document.getElementById("demo").innerHTML="paragraph changed";
-
-            document.getElementById("demo2").innerHTML="a pragraph.";
+            document.getElementById("demo2").innerHTML="a paragraph.";
         }
     </script>
 </head>
 <p id="demo">a paragraph.</p>
-
 <p id="demo2">pragraph changed</p>
-
 <button type="button" onclick="myFuntion()">try it</button> -->
 
 
@@ -63,7 +60,6 @@ document.getElementById('demo').innerHTML="hello"
 <button type="button" onclick="myFunction()">Try it</button>
 <script>
     function myFunction(){
-
         document.getElementById('demo').innerHTML="pargraph changed.";
     }
 </script> -->
@@ -78,8 +74,8 @@ document.getElementById('demo').innerHTML="hello"
 </script>
 <p id="demo">A paragraph</p>
 <button type="button" onclick="myFunction()">try it</button>
-<p>this exemple links to "myScript.js</p>
-<p>(myFunction is stored in "myFunction.js")</p>
+<p>Bu örnek "myScript.js"ye bağlantı verir</p>
+<p>(myFunction "myFunction.js" saklanır)</p>
 <script src="myScript.js"></script> -->
 
 
@@ -107,7 +103,7 @@ document.getElementById('demo').innerHTML="hello"
     function myFunction(){
         document.getElementById('demo').innerHTML="paragraph changed"
     }
-</script>-->
+</script> -->
 
 
 <!-- saklanıcak veri mScript'de saklanır
@@ -125,12 +121,12 @@ document.getElementById('demo').innerHTML="hello"
 
 
 
-<!--<h2>my first web page</h2>
+<!-- <h2>my first web page</h2>
 <p>m first paragraph.</p>
  innerHTML kullanımı
 <p id="demo"></p>
 <script>
-    document.getElementById("demo").innerHTML=20+55
+    document.getElementById("demo").innerHTML=20+55;
 </script> -->
 
 
@@ -162,14 +158,14 @@ document.getElementById('demo').innerHTML="hello"
 
 
 <!-- sayfayı yazdırmak için kullanılır
-<p>Geçerli sayfaı yazdırmak için düğmeye yazdır</p>
+<p>Geçerli sayfayı yazdırmak için düğmeye yazdır</p>
 <button onclick="window.print()">bu safayı yazdır</button> -->
 
 
 
-<!-- let ile tanımlanan değişkennin değerini güncelleyebiliriz ama değişkeni tekrar tanımlayamayız
+<!-- let ile tanımlanan değişkennin değerini güncelleyebiliriz ama tekrar değişken tanımlayamayız
 <h2>JavaScrip ifadeleri</h2>
-<p>bir<b>javaScript programı</b>bir bilgisayar tarafından yürütülecek<b>ifadelerin</b>listesidir.</p>
+<p>bir <b>javaScript programı</b> bir bilgisayar tarafından yürütülecek <b>ifadelerin</b> listesidir.</p>
 <p id="demo"></p>
 <script>
     let x, y, z;
@@ -225,10 +221,11 @@ document.getElementById('demo').innerHTML="hello"
 <button type="button" onclick="myFunction()">click me</button>
 <p id="demo1"></p>
 <p id="demo2"></p>
+<p id="demo3"></p>
 <script>
     function myFunction(){
-        document.getElementById("demo1").innerHTML="hello dolly"
-        document.getElementById("demo2").innerHTML="how are you"
+        document.getElementById("demo1").innerHTML="hello dolly";
+        document.getElementById("demo2").innerHTML="how are you";
     }
 </script> -->
 
@@ -378,7 +375,7 @@ document.getElementById('demo').innerHTML="hello"
 <p id="demo"></p>
 <script>
     let carName="volvo";
-    document.getElementById("demo").innerHTML=arabaAdı;
+    document.getElementById("demo").innerHTML=carName;
 </script> -->
 
 
@@ -758,10 +755,159 @@ document.getElementById("demo").innerHTML=z;
 
 
 
+<!-- <p>"iyi günler" saat 18:00'den az ise:</p>
+<p id="demo">iyi akşamlar</p>
+<script>
+    if(new Date(). getHours() <18){
+        document.getElementById("demo").innerHTML="iyi günler"
+    }
+</script> -->
+
+
+
+<!-- <p>zamana dayalı bir karşılama</p>
+<p id="demo"></p>
+<script>
+    const time=new Date().getHours();
+    let greeting;
+
+    if (time < 18){
+        greeting = "Good day";
+    }else{
+        greeting="Good evening";
+    }
+    document.getElementById("demo").innerHTML=greeting;
+</script> -->
+
+
+
+<!-- <p>zamana dayalı bir karşılama</p>
+<p id="demo"></p>
+<script>
+    const time=new Date().getHours();
+    let greeting;
+    if (time < 10){
+        greeting = "Good morning";
+    }else if (time < 20){
+        greeting = "Good day";
+    }else{
+        greeting = "Good night"
+    }
+    document.getElementById("demo").innerHTML=greeting;
+</script> -->
+
+
+
+<!-- zamana göre sayfayı gerie mesaj döndürür
+ <script>
+    var tarih = new Date();
+    var saat = tarih.getHours();
+    if(saat<18){
+        alert("iyi günler");
+    }
+ </script> -->
+
+
+ <!--zamana göre sayfayı gerie mesaj döndürür
+     <script>
+    var tarih = new Date();
+    var saat = tarih.getHours();
+    if(saat<2){
+        alert("iyi günler");
+    }else{
+        alert("iyi akşamlar");
+    }
+</script> -->
+    
+    
+    
+    
+    <!--zamana göre sayfayı gerie mesaj döndürür
+         <script>
+        var tarih = new Date();
+        var saat = tarih.getHours();
+        if(saat<10){
+            alert("günaydın");
+        }else if (saat<10){
+            alert("iyi günler");
+        }else{
+            alert("iyi akşamlar");
+        }
+    </script> -->
+
+
+<!-- colsole tarafına saynın negatif mi değilmi gösterir
+    <script>
+        let sayi = prompt ("bir sayı girin:");
+        if(sayi > 0){
+            console.log("sayı pozitif");
+        }else{
+            console.log("sayı negatif");
+        }
+    </script> -->
+
+
+
+    <!-- tarihe göre hangi günde olduğunu söyler
+        <p id="demo"></p>
+        <script>
+            let day;
+            switch (new Date().getDay()){
+                case 0:
+                day = "sunday";
+                break;
+                case 1:
+                day = "monday";
+                break;
+                case 2:
+                day = "tuesday";
+                break;
+                case 3:
+                day = "wednesday";
+                break;
+                case 4:
+                day = "thusday";
+                break;
+                case 5:
+                day = "saturday"; 
+            }
+            document.getElementById("demo").innerHTML="today is " + day;
+        </script> -->
 
 
 
 
+        <!-- <script>
+            let sayi =prompt("bir sayı girin");
+
+            if(sayi>0){
+                console.log("sayı pozitif");
+            }else if(sayi==0){
+                console.log("sayınız nötr sıfırdır");
+            }
+            else{
+                console.log("sayı negatif");
+            }
+        </script> -->
+
+
+
+        <!-- <script>
+            let sayi=prompt("bir sayı girin:");
+            if(sayi %2==0){
+                window.alert("çift sayı girdiniz");
+            }else{
+                window.alert("tek sayı girdiniz");
+            }
+        </script> -->
+
+
+
+
+
+
+
+ 
 
 
 
