@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- <h2>What Can JavaScript Do?</h2>
+ js html içeriğini değiştirebilir 
+<p id="demo">JavaScrip can change HTML content.</p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML= "hello world!"'>click me</button>
+<br><br> -->
+
+
+    <!-- js html stillerini değiştireblir -->
+    <!-- <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">turn on the light</button>
+<img id="mtImage"src="pic_bulbof.gif"style="width:100px">
+<button onclick="document.getElementById('myImage').src='pic_bulbof.gif'">turn off the light</button> -->
+
+
+
+    <!-- js html ögelerini boyutunu ayarlayabilir
+ <h2>what can JavaScript do?</h2>
+<p id="demo">JavaScrip can change the style of an HTML element</p>
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Big font</button>
+<button type="button" onclick="document.getElementById('demo').style.fontSize='15px'">little font</button> -->
+
+
+
+    <!-- js html ögelerini gizleyebilir -->
+    <!-- <p id="demo">JavaScrip can hide HTML elements</p>
+<button type="button" onclick="document.getElementById('demo').style.display='none'">trust me</button>
+<p id="demo" style="display: none">JavaScrip can show hidden HTML elements</p>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">click me</button> -->
+
+
+    <!-- script etiketi yazı yazdırma -->
+    <!-- <p id="demo">hello</p>
+<script>
+document.getElementById('demo').innerHTML="hello"
+</script> -->
+
+
+
+    <!-- head'de arasında javaScript -->
+    <!-- <head>
+    <script>
+        function myFuntion(){
+            document.getElementById("demo").innerHTML="paragraph changed";
+            document.getElementById("demo2").innerHTML="a paragraph.";
+        }
+    </script>
+</head>
+<p id="demo">a paragraph.</p>
+<p id="demo2">pragraph changed</p>
+<button type="button" onclick="myFuntion()">try it</button> -->
+
+
+
+    <!-- body arasında JavaScrip
+<p id="demo">A paragraph.</p>
+<button type="button" onclick="myFunction()">Try it</button>
+<script>
+    function myFunction(){
+        document.getElementById('demo').innerHTML="pargraph changed.";
+    }
+</script> -->
+
+
+
+    <!-- harici javascript avantajları
+<script>
+    function myFunction(){
+        document.getElementById('demo').innerHTML="pargraph chaned"
+    }
+</script>
+<p id="demo">A paragraph</p>
+<button type="button" onclick="myFunction()">try it</button>
+<p>Bu örnek "myScript.js"ye bağlantı verir</p>
+<p>(myFunction "myFunction.js" saklanır)</p>
+<script src="myScript.js"></script> -->
+
+
+    <!-- dosyadan veri çekme
+ <script>
+    function myFunction(){
+        document.getElementById('demo').innerHTML="pargraph changed"
+    }
+</script>
+<p id="demo">A paragraph</p>
+<button type="button" onclick="myFunction()">click me</button>
+<p>bu örnek "myScript.js"de bağlantı vermek için tam bir web URL'si kullanılır.</p>
+<p>(myFunction "myScript.js"de saklanır)</p>
+<script src="/deneme.js"></script> -->
+
+
+
+    <!-- klasörden veri çekmek 
+<p id="demo">A paragraph.</p>
+<button type="button" onclick="myFunction()">tr it</button>
+<p>Bu örnek, "myScript.js" dosyasına bağlamak için bir dosya yolu kullanılır.</p>
+<p>(myFunction "myScript.js"de saklanır)</p>
+<script src="/js/myScript.js"></script>
+<script>
+    function myFunction(){
+        document.getElementById('demo').innerHTML="paragraph changed"
+    }
+</script> -->
+
+
+    <!-- saklanıcak veri mScript'de saklanır
+<p id="demo">A paragraph</p>
+<button type="button" onclick="myFunction">try it</button>
+<p>bu örnek "myScrip.js"ye bağlantı verir.</p>
+<p>(myFunction "myScript.js"ye saklanır)</p>
+<script src="myScript.js"></script>
+<script>
+    function myFunction(){
+        document.getElementById('demo').innerHTML="paragraph changed"
+    }
+</script> -->
+
+
+
+
+    <!-- <h2>my first web page</h2>
+<p>m first paragraph.</p>
+ innerHTML kullanımı
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML=20+55;
+</script> -->
+
+
+    <!-- document.write işlevini kullanma
+<p>belgenin yüklemesi tamamlandıktan sonra asla document.write'ı çağırma.Tüm belgenin üzerine yazacaktır.</p>
+<script>
+    document.write(6+9);
+</script> -->
+
+
+    <!-- document.write kullanımı button hali
+<button type="button" onclick="document.write(5+9)">try it</button> -->
+
+
+
+    <!-- window.alert() işlevinin kullanma
+<script>window.alert(7+98)</script> -->
+
+
+    <!-- window.alert() işlevinin kullanımı
+<script>window.alert(78/6)</script> -->
+
+
+    <!-- console.log işlevinin kullanımı çıkan sonuç console den gözükür
+<p>klavyenizdeki f12 hata ayıklamayı etkinleştirecektir</p>
+<p>ardından hata ayıklayıcı menüsünde "konsol"u seçin</p>
+<p>ardından tekrar çalıştır'a tıklatın</p>
+<script>console.log(87+65)</script> -->
+
+
+    <!-- sayfayı yazdırmak için kullanılır
+<p>Geçerli sayfayı yazdırmak için düğmeye yazdır</p>
+<button onclick="window.print()">bu safayı yazdır</button> -->
+
+
+
+    <!-- let ile tanımlanan değişkennin değerini güncelleyebiliriz ama tekrar değişken tanımlayamayız
+<h2>JavaScrip ifadeleri</h2>
+<p>bir <b>javaScript programı</b> bir bilgisayar tarafından yürütülecek <b>ifadelerin</b> listesidir.</p>
+<p id="demo"></p>
+<script>
+    let x, y, z;
+    x=5;
+    y=7;
+    z=x+y;
+
+    document.getElementById("demo").innerHTML="z nin değeri"+z+".";
+</script> -->
+
+
+
+    <!-- javaScript ifadeleri
+<p id="demo"></p>
+<script>document.getElementById("demo").innerHTML="hello dolly";
+</script> -->
+
+
+
+    <!-- noktalı virgül kullanımı
+<p id="demo"></p>
+<script>
+    let a, b, c;
+    a=5;
+    b=9;
+    c=a+b;
+    document.getElementById("demo").innerHTML=c;
+</script> -->
+
+
+
+    <!-- noktalı virgül kullanımı
+<p>bir satırda birden fazla ifadeye izin verilir.</p>
+<p id="demo"></p>
+<script>
+  let a,b,c;
+  a=7; b=9; c=a+b;
+  document.getElementById("demo").innerHTML=c;
+</script> -->
+
+
+
+    <!-- javaScript satır uzunluğu ve satır sonları
+<p>bir kod satırını kırmak için en iyi yer bir işlecin veya virgülün sonrasıdır</p>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML="hello dolly";
+</script> -->
+
+
+    <!-- javaScript ifadeleri küme parantezleri "{}" içinde kod blokları halinde gruplandırılabilir
+<p>javaScript kod blokları {ile} arasında yazılır</p>
+<button type="button" onclick="myFunction()">click me</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<script>
+    function myFunction(){
+        document.getElementById("demo1").innerHTML="hello dolly";
+        document.getElementById("demo2").innerHTML="how are you";
+    }
+</script> -->
+
+
+
+    <!-- javaScript değişmez değerleri sayılar
+<p>sayı ondalıklı veya ondalıksız kullanılabilir</p>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML=10.50;
+</script> -->
+
+
+    <!-- string'lerde tektırnak veya çift tırnak arsına yazılabilir
+<p>dizeler çift veya tek tırnak işaretiyle yazılabilir</p>
+<p id="demo"></p>
+<script>document.getElementById("demo").innerHTML="jhon doe"</script> -->
+
+
+    <!-- değişkene daha sonrada değer girilebilir
+<p>bu örnek x bir değişken olarak tanımlanmıştır daha sonra x'e 6 değer atanır:</p>
+<p id="demo"></p>
+<script>
+    let x;
+    x=6;
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+    <!-- javaScript operatörleri
+<p>javaScript değerleri hesaplamak için aritmetik operatörleri kullanılır (tıpkı cebirde olduğu gibi.)</p>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML=(5+7)*10;
+</script> -->
+
+
+
+    <!-- javaScriptanahtar kelimeleri
+<h2><b>let</b> Anahtar kelime değişkenler yaratır</h2>
+<p id="demo"></p>
+<script>
+    let x,y;
+    x=5+6;
+    y=x*10;
+    document.getElementById("demo").innerHTML=y;
+</script> -->
+
+
+    <!-- var ile değişken tekrar tanımlanabilir ve değer güncellenir değer almazsa ekrana undefined yazar
+<h2>Anahtar kelime değişkenler oluşturur</h2>
+<p id="demo"></p>
+<script>
+    var x,y;
+    x=10+30;
+    y=x*50;
+    document.getElementById("demo").innerHTML=y;
+</script> -->
+
+
+
+    <!-- javaScript büyük harflere duyarlıdır
+<p>soyadını soyadı olarak değiştirmei deneyin</p>
+<p id="demo"></p>
+<script>
+    let lastname, lastName;
+    lastName="Doe";
+    lastname="peterson";
+    document.getElementById("demo").innerHTML=lastName;
+</script> -->
+
+
+
+    <!--örnekte gibi değişken belirtilmediği halde sonucu gösterebilir 
+ <p>Örnekte x,y,z belirtilmemiştir.</p>
+<p>ilk kullanıldıklarında otomatik olarak bildirilirler</p>
+<p id="demo"></p>
+<script>
+    x=5;
+    y=9;
+    z=x+y;
+    document.getElementById("demo").innerHTML="z'nin değeri"+z;
+</script> -->
+
+
+
+    <!-- x,y ve z'yi saklar sadece çıktıyı gösterir
+<p>bu örnekte x,y, ve z değişkenlerdir.</p>
+<p id="demo"></p>
+<script>
+    var x=10;
+    var y=6;
+    var z=x + y;
+    document.getElementById("demo").innerHTML="z'nin değeri"+z;
+</script> -->
+
+
+
+    <!-- bir öncekş örnekle aynıdır sadece let kullanılmıştır
+<p id="demo"></p>
+<script>
+    let x=10;
+    let y=9;
+    let z=x+y;
+    document.getElementById("demo").innerHTML="z'nin değeri" +z;
+</script> -->
+
+
+
+    <!-- bir önceki örnekle anıdır sadee let yerine const kullanılmıştır
+<p id="demo"></p>
+<script>
+    const x=20;
+    const y=9;
+    const z=x*y;
+    document.getElementById("demo").innerHTML="z'nin değeri" +z;
+</script> -->
+
+
+    <!-- bir önceki örneklerin karma şekli 
+<p>Bu örnekte fiyat1, fiyat2 ve toplam değişkenlerdir.</p>
+<p id="demo"></p>
+<script>
+    const fiyat1=9;
+    const fiyat2=7;
+    let toplam =fiyat1+fiyat2;
+    document.getElementById("demo").innerHTML="toplam" +toplam; 
+</script> -->
+
+
+
+    <!-- <p>dizeler tırnak işaretiyle yazılır.</p>
+<p>sayılar tırnak işaretleriyle olmadan yazılır</p>
+<p id="demo"></p>
+<script>
+    const pi=3.14;
+    let person="jhon wick";
+    let answer="yes I am";
+    document.getElementById("demo").innerHTML=pi + "<br>" + person + "<br>" +answer;
+</script> -->
+
+
+
+    <!-- normal bir string değişken atanmıştır
+<p>Bir değişken oluşturun, ona bir değer atayın ve görüntüleyin:</p>
+<p id="demo"></p>
+<script>
+    let carName="volvo";
+    document.getElementById("demo").innerHTML=carName;
+</script> -->
+
+
+
+    <!-- bir değişkenin içinde birden fazla değer bulunabilir
+<p>bir ifadenin birçok değişkeni bildirebilirsiniz.</p>
+<p id="demo"></p>
+<script>
+    let person="jhon wick", carName="volvo",price=200;
+    document.getElementById("demo").innerHTML=carName;
+</script> -->
+
+
+
+    <!-- yukarıdakiyle aynıdır
+<p>bir fadede birçok değişkeni bildirebilirsiniz</p>
+<p id="demo"></p>
+<script>
+ let person="jhon wick", carName="volvo", price=200;
+ document.getElementById("demo").innerHTML=carName;
+</script> -->
+
+
+
+    <!-- değişkene değer vermezsen tanımsız olarak geri değer döndürür
+<p>Değeri olmayan bir değikenin değeri şu şekildedir:</p>
+<p id="demo"></p>
+<script>
+    let carName;
+    document.getElementById("demo").innerHTML=carName;
+</script> -->
+
+
+    <!-- javaScript değişkenlerini tekrardan bildirme
+<p>bir javaScript değişkenini yeniden bildirirseniz değerini kaybetmez</p>
+<p id="demo"></p>
+<script>
+    var carName="volvo";
+    var carName;
+    document.getElementById("demo").innerHTML=carName;
+</script> -->
+
+
+
+    <!-- javaScript aritmetiği
+<p>5 + 2 + 3'ün eklenmesinin sonucu</p>
+<p id="demo"></p>
+<script>
+    let x= 5+2+3;
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+    <!-- javaScript aritmetiği
+<p>"Jhon" + "" + "Doe" eklemenin sonucu:</p>
+<p id="demo"></p>
+<script>
+    let x= "Jhon" + " " + "Doe";
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+    <!-- javaScript aritmetiği
+<p>"5" +2 +3'ün eklenmesinin sonucu:</p>
+<p id="demo"></p>
+<script>
+    let x="5" + 2 + 3;
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+    <!-- javaScript aritmetiği
+<p>2 + 3 + "5" eklemenin sonucu:</p>
+<p id="demo"></p>
+<script>
+    let x= 2 + 3 + "5";
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+    <!-- dolar işareti harf gibi gözükür 
+<p>dolar işareti javaScript adlarında harf gibi değerlendirilir.</p>
+<p id="demo"></p>
+<script>
+    let $$$=2;
+    let $myMoney=5;
+    document.getElementById("demo").innerHTML=$$$ + $myMoney;
+</script> -->
+
+
+
+    <!-- alt çizgi harf gibi gözükür
+<p>alt çizgi javaScript adlarında harf gibi değerlendirilir.</p>
+<p id="demo"></p>
+<script>
+    let _x=9;
+    let _100=5;
+    document.getElementById("demo").innerHTML=_x + _100;
+</script> -->
+
+
+
+    <!-- var'da bir değişkene birden fazla veri girilirse en son girilen değeri yazdırır
+<p>var kullanarak bir değişkeni yeniden bildirmek</p>
+<p id="demo"></p>
+<script>
+    var x=2;
+    {
+        var x=30;
+    }
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+    <!-- let sadece bir değişken alır değişkenin değerini değiştiremzsin
+<p>bir değişkeni let kullanarak yeniden bildirmek.</p>
+<p id="demo"></p>
+<script>
+    let x=10;
+    {
+        let x=49;
+    }
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+    <!-- <p>Bir javaScript değişkenin <b>var</b> ile yaniden bildirilmesine programın herhangi bir yerinde izin verilir:</p>
+<p id="demo"></p>
+<script>
+    var x=9;
+    
+    var x=56;
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+    <!-- let'de sadece bir tane değişken tanmlanır
+<p>bir değişkenin başka bir kapsamda veya başka bir blokta <b>let</b> ile yeniden bildirilmesine izin verilir: </p>
+<p id="demo"></p>
+<script>
+    let x=2;
+    {
+        let x=7;
+    }
+    {
+        let x=9;
+    }
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+    <!-- değişken en sonda tanımlanabilir kullanılabilir
+<p><b>var</b> ile bir değişkeni bildirmeden önce kullanabilirsiniz:</p>
+<p id="demo"></p>
+<script>
+    carName="volvo";
+    document.getElementById("demo").innerHTML=carName;
+    var carName;
+</script> -->
+
+
+    <!-- let'le değişken bildirilmeden kullanılmaz
+<p><b>let</b> ile bir değişkeni bildirilmeden önce kullanamazsınız.</p>
+<p id="demo"></p>
+<script>
+    try{
+        carName = "Saab";
+        let carName="volvo";
+    }
+    catch(err){
+        document.getElementById("demo").innerHTML=err;
+    }
+</script> -->
+
+
+
+    <!-- Bir const değişken tekrar atanamaz
+<p id="demo"></p>
+<script>
+    try{
+        const PI =3.141592653589793;
+        PI =3.14;
+    }
+    catch (err){
+        document.getElementById("demo").innerHTML=err;
+    }
+</script> -->
+
+
+
+    <!-- dizide hem ekleyip hemde değişiklik yapılabilir
+<p>Sabit bir dizi bildirmek elemanları değiştilemez yapmaz:</p>
+<p id="demo"></p>
+<script>
+    //Bir dizi oluştur
+    const cars =["Saab","Volvo","BMW"];
+
+    //Bir ögeyi değiştirin:
+    cars [0] ="Toyota";
+
+    //Bir öge ekleyin:
+    cars . push("Audi");
+
+    //Bir diziyi göster:
+    document.getElementById("demo").innerHTML=cars;
+</script> -->
+
+
+    <!-- sabit diziler tekraratanmaz
+<p>Bir sabit diziyi yeniden atayamazsınız:</p>
+<p id="demo"></p>
+<script>
+    try{
+        const cars=["Saab","Volvo","BMW"];
+        cars =["Toyota","Volvo","Audi"];
+    }
+    catch (err){
+        document.getElementById("demo").innerHTML=err;
+    }
+</script> -->
+
+
+    <!-- Doğru bir yazılıştır
+<p>sabit bir nesne bildirmek nesnelerin özelliklerini değiştirilemez HALE GETİRMEZ</p>
+<p id="demo"></p>
+<script>
+    //Bir nesne oluştur
+    const car={type: "Fiat", model: "500", color : "beyaz"};
+
+    //Bir özelliği değiştir:
+    car.owner ="jhonson";
+
+    //özelliği göster:
+    document.getElementById("demo").innerHTML="car owner is " + car.owner;
+</script> -->
+
+
+    <!-- aşağıdaki örnek üstteki örneğin yanlış yazlışıdır
+<p>Sabit bir nesneyi yeniden atayamazsınız:</p>
+<p id="demo"></p>
+<script>
+    try{
+        const car={type: "Fiat", model: "500", color : "beyaz"};
+        car ={type: "Volvo", model:"EX60",color:"red"};
+    }
+    catch(err){
+       document.getElementById("demo").innerHTML=err;   
+    }
+</script> -->
+
+
+
+    <!-- 
+<p>javaScript const değişkenleriblok kapsamına sahiptir.</p>
+<p id="demo"></p>
+<script>
+    const x=10;
+    //Burada x 10'dur
+    {
+        const x=68;
+        //Burada x 68'dir
+    }
+    document.getElementById("demo").innerHTML="x eşittir" + x;
+</script> -->
+
+
+    <!-- bir değişken bildirmeden önce kullanılır 
+<p><b>var</b> ile bir değişken bildirilmeden önce kullanabilirsiniz:</p>
+<p id="demo"></p>
+<script>
+    carName ="volvo";
+    document.getElementById("demo").innerHTML=carName;
+    var carName;
+</script> -->
+
+
+    <!-- bu örnek yukardakinin yanlış olanıdır
+<p><b>const</b> ile bir değişkeni bildirmeden önce kullanamazsınız</p>
+<p id="demo"></p>
+<script>
+    try{
+        alert(carName);
+        const carName="volvo";
+    }
+    catch(err){
+        document.getElementById("demo").innerHTML=err;
+    }
+</script> -->
+
+
+
+    <!-- (=) Operatörü
+<p>javaScript Operatörleri</p>
+<p><b>= Operatörü</b></p>
+<p id="demo"></p>
+<script>
+    let x=10;
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+
+    <!-- <h2>Atama (=) operatörü</h2>
+<p id="demo"></p>
+<script>
+    let x=2;
+    let y=9;
+    let z=x*y;
+    document.getElementById("demo").innerHTML=z;
+</script> -->
+
+
+
+
+    <!-- <h2>+ Operatörü</h2>
+<p id="demo"></p>
+<script>
+let x=5
+let a=67;
+let z=a+x;
+document.getElementById("demo").innerHTML=z;
+</script> -->
+
+
+
+    <!-- <h2>* Operatörü</h2>
+<p id="demo"></p>
+<script>
+    let a=2;
+    let s=9;
+    let q=a*s;
+    document.getElementById("demo").innerHTML=q;
+</script> -->
+
+
+
+
+    <!-- <h2>Aritmetik işlemler</h2>
+<p>Tipik bir aritmetik işlemiki sayıyı (veya ifadeyi) alırve yeni bir sayı üretir</p>
+<p id="demo"></p>
+<script>
+    let a=3;
+    let s=(100+50) * a;
+    document.getElementById("demo").innerHTML=s;
+</script> -->
+
+
+
+    <!-- <h2>+= Operatörü</h2>
+<p id="demo"></p>
+<script>
+    var x=10;
+    x +=5;
+    document.getElementById("demo").innerHTML=x;
+</script> -->
+
+
+
+    <!-- result geriye true yada false döndürecek şekilde kullanılır
+<h2>javaScript dizesi operatörleri</h2>
+<p>Tüm koşullu operatörler hem sayılarda hem de dizelerde kullanılabilir.</p>
+<p id="demo"></p>
+<script>
+    let text1 ="A";
+    let text2 ="B";
+    let result = text1 < text2;
+    document.getElementById("demo").innerHTML="A,B'den küçükmü?" + result;
+</script> -->
+
+
+
+
+    <!-- <p>"iyi günler" saat 18:00'den az ise:</p>
+<p id="demo">iyi akşamlar</p>
+<script>
+    if(new Date(). getHours() <18){
+        document.getElementById("demo").innerHTML="iyi günler"
+    }
+</script> -->
+
+
+
+    <!-- <p>zamana dayalı bir karşılama</p>
+<p id="demo"></p>
+<script>
+    const time=new Date().getHours();
+    let greeting;
+
+    if (time < 18){
+        greeting = "Good day";
+    }else{
+        greeting="Good evening";
+    }
+    document.getElementById("demo").innerHTML=greeting;
+</script> -->
+
+
+
+    <!-- <p>zamana dayalı bir karşılama</p>
+<p id="demo"></p>
+<script>
+    const time=new Date().getHours();
+    let greeting;
+    if (time < 10){
+        greeting = "Good morning";
+    }else if (time < 20){
+        greeting = "Good day";
+    }else{
+        greeting = "Good night"
+    }
+    document.getElementById("demo").innerHTML=greeting;
+</script> -->
+
+
+
+    <!-- zamana göre sayfayı gerie mesaj döndürür
+ <script>
+    var tarih = new Date();
+    var saat = tarih.getHours();
+    if(saat<18){
+        alert("iyi günler");
+    }
+ </script> -->
+
+
+    <!--zamana göre sayfayı gerie mesaj döndürür
+     <script>
+    var tarih = new Date();
+    var saat = tarih.getHours();
+    if(saat<2){
+        alert("iyi günler");
+    }else{
+        alert("iyi akşamlar");
+    }
+</script> -->
+
+
+
+
+    <!--zamana göre sayfayı gerie mesaj döndürür
+         <script>
+        var tarih = new Date();
+        var saat = tarih.getHours();
+        if(saat<10){
+            alert("günaydın");
+        }else if (saat<10){
+            alert("iyi günler");
+        }else{
+            alert("iyi akşamlar");
+        }
+    </script> -->
+
+
+    <!-- colsole tarafına saynın negatif mi değilmi gösterir
+    <script>
+        let sayi = prompt ("bir sayı girin:");
+        if(sayi > 0){
+            console.log("sayı pozitif");
+        }else{
+            console.log("sayı negatif");
+        }
+    </script> -->
+
+
+
+    <!-- tarihe göre hangi günde olduğunu söyler
+        <p id="demo"></p>
+        <script>
+            let day;
+            switch (new Date().getDay()){
+                case 0:
+                day = "sunday";
+                break;
+                case 1:
+                day = "monday";
+                break;
+                case 2:
+                day = "tuesday";
+                break;
+                case 3:
+                day = "wednesday";
+                break;
+                case 4:
+                day = "thusday";
+                break;
+                case 5:
+                day = "saturday"; 
+            }
+            document.getElementById("demo").innerHTML="today is " + day;
+        </script> -->
+
+
+
+
+    <!-- <script>
+            let sayi =prompt("bir sayı girin");
+
+            if(sayi>0){
+                console.log("sayı pozitif");
+            }else if(sayi==0){
+                console.log("sayınız nötr sıfırdır");
+            }
+            else{
+                console.log("sayı negatif");
+            }
+        </script> -->
+
+
+
+    <!-- <script>
+            let sayi=prompt("bir sayı girin:");
+            if(sayi %2==0){
+                window.alert("çift sayı girdiniz");
+            }else{
+                window.alert("tek sayı girdiniz");
+            }
+        </script> -->
+
+
+
+    <!-- <script>
+            let suan = new Date();
+            let haftaninGunu = suan .getDay();
+            console.log(haftaninGunu)
+            if(haftaninGunu == 6 || haftaninGunu == 7){
+                alert("iyi tatiller");
+            }
+            else{
+                alert("iyi çalışmalar");
+            }
+        </script> -->
+
+
+
+    <!-- <script>
+            let suan =new Date();
+            let haftaninGunu =suan.getDay()
+            console.log(haftaninGunu)
+            if(haftaninGunu==0){
+                alert("günlerden pazar")
+            }else if(haftaninGunu == 1){
+                alert("günlerden pazartesi")
+            }else if(haftaninGunu == 2){
+                alert("günlerden salı")
+            }else if(haftaninGunu == 3){
+                alert("günlerden çarşamba")
+            }else if(haftaninGunu == 4){
+                alert("günlerden perşembe")
+            }else if(haftaninGunu == 5){
+                alert("günlerden cuma")
+            }else if(haftaninGunu == 6){
+                alert("günlerden cumartesi")
+            }
+        </script> -->
+
+
+
+    <!-- <script>
+            sayi1 = prompt("1. sayıyı girin:")
+            sayi2 = prompt("2. sayıyı girin:")
+            sayi3 = prompt("3. sayıyı girin:")
+
+            if(sayi1 > sayi2 && sayi1 > sayi3){
+                alert("büyük sayı:" +sayi1)
+            }else if(sayi2 > sayi3){
+                alert("büyük sayı:" +sayi2)
+            }else{
+                alert("büyük sayı:" +sayi3)
+            }
+        </script> -->
+
+
+
+    <!--
+         <script>
+        isim = prompt("Kullanıcı adı girin");
+        sifre = prompt("Kullanıcı şifresi girin");
+
+        k = "admin";
+        s = "şifre";
+
+        if (isim == k && sifre == s) {
+            alert("Giriş Başarılı")
+        } else if (isim != k || sifre != s) {
+            alert("Kullanıcı adı veya şifre hatalı")
+        }
+    </script> -->
+
+
+
+
+    <!--<input type="number" id="orgnot">
+    <div id="durumgoster"></div>
+
+    <script>
+        var ogrenciNot = document.getElementById("orgnot");
+        ogrenciNot.onchange = notHesapla;
+
+        function notHesapla() {
+            var ogrenciNotu = Number(ogrenciNot.value);
+            var durumGoster = document.getElementById("durumgoster");
+            if (ogrenciNotu < 0) {
+                durumGoster.innerHTML = "HATALI NOT";
+            }
+            else if (ogrenciNotu < 50) {
+                durumGoster.innerHTML = "KALDINIZ";
+            }
+            else if (ogrenciNotu < 60) {
+                durumGoster.innerHTML = "GEÇER";
+            }
+            else if (ogrenciNotu < 70) {
+                durumGoster.innerHTML = "ORTA";
+            }
+            else if (ogrenciNotu < 85) {
+                durumGoster.innerHTML = "İYİ";
+            }
+            else if (ogrenciNotu < 100) {
+                durumGoster.innerHTML = "PEK İYİ";
+            }
+            else {
+                durumGoster.innerHTML = "HATALI NOT";
+            }
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        var tarih = new Date();
+        var gun =tarih.getDay();
+        switch(gun){
+            case 0:
+            alert("pazar");
+            break;
+            case 6: 
+            alert("cumartesi");
+            break;
+            default:
+            alert("henüz hafta sonu değil");       
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        var tarih = new Date();
+        var gun = tarih.getDay();
+        switch(gun){
+            default:
+                alert("henüz hatasonu değil");
+                break;
+                case 0:
+                    alert("pazar");
+                    break;
+                    case 6:
+                        alert("cumartesi");
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        var tarih = new Date();
+        var gun = tarih.getDay();
+        switch (gun) {
+            case 4:
+            case 5:
+                alert("hafta sonuna az kaldı");
+                break;
+            case 0:
+            case 6:
+                alert("hafta sonu");
+                break;
+            default:
+                alert("henüz hafta sonu değil");
+        }
+    </script> -->
+
+
+    <!-- <script>
+        var a = 3;
+        switch (a / 3) {
+            case 1:
+                alert("case 1 çalıştı");
+                break;
+            case 2:
+                alert("case 2 çalıştı");
+                break;
+            case 3:
+                alert("case 3 çalıştı");
+                break;
+            case 4:
+                alert("case 4 çalıştı");
+                break;
+            default:
+                alert("default case")
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        var meyve="şeftali";
+        switch (meyve){
+            case "kiraz":
+            alert("yaz meyvesi");break;
+            case "mandalin":
+            alert("kış meyvesi");break;
+            case "erik":
+            alert("bahar meyvesi");break;
+            case "şeftali":
+            alert("yaz meyvesi");break; 
+            default: alert("herhangi bir mevsimin meyvesi");  
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        var meyve = "kiraz";
+        switch (meyve) {
+            case "kiraz":
+            case "karpuz":
+            case "şeftali":
+                alert("yaz meyvesi"); break;
+            case "mandalin":
+            case "portakal":
+            case "greyfurt":
+                alert("kış meyvesi");break;
+            case "erik":
+            alert("ilkbahar meyvesi");break;
+        }
+    </script> -->
+
+
+
+    <!-- <script>
+        var sonuc;
+        var islem="*";
+        var i1=100;
+        var i2=90;
+
+        switch(islem){
+            case "+": sonuc=i1 +i2; break;
+            case "-": sonuc=i1 -i2; break;
+            case "*": sonuc=i1 *i2; break;
+            case "/": sonuc=i1 /i2; break;
+            default: sonuc=$i1 / $i2;
+        }
+        alert("sonuç..." + sonuc);
+    </script> -->
+
+
+
+
+
+    <style>
+        html {
+            height: 100%;
+        }
+        body{
+        min-height: 100%;       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .hesapMakinesi {
+            margin: 0 auto;
+            width: 500px;
+            height: auto;
+            background-color: rgb(189, 189, 189);
+            border-radius: 100px;
+            padding: 15px;
+        }
+
+        #ekran {
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+        }
+
+        #sonuc {
+            padding: 10px;
+            width: 90%;
+            border: none;
+            border-radius: 5px;
+            text-align: right;
+            font-size: 50px;
+            word-wrap: break-word;
+        }
+
+        .sayilar {
+            text-align: center;
+        }
+
+        button {
+            width: 70px;
+            height: 50px;
+            margin: 4px;
+            border-radius: 5px;
+            background-color: whitesmoke;
+            border: none;
+            outline: none;
+            transition:all 0.4s;
+        }
+        button:hover{
+            transform: translateY(-2px);
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="hesapMakinesi">
+            <div id="ekran">
+                <input type="text" id="sonuc">
+            </div>
+            <div class="sayilar">
+                <button class="btn btn-outline-success " onclick="addToDisplay('1')">1</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('2')">2</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('3')">3</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('4')">4</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('5')">5</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('6')">6</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('7')">7</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('8')">8</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('9')">9</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('0')">0</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('*')">*</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('-')">-</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('+')">+</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('/')">/</button>
+                <button class="btn btn-outline-success " onclick="calculate()">=</button>
+                <button class="btn btn-outline-success " onclick="clearEntry()">CE</button>
+                
+            </div>
+        </div>
+
+        <script>
+            "use strict";
+            var sonuc = document.getElementById("sonuc");
+
+            function addToDisplay(value) {
+                sonuc.value += value;
+            }
+
+            function clearEntry() {
+                sonuc.value = '';
+            }
+
+            function calculate() {
+                try {
+                    sonuc.value = eval(sonuc.value);
+                } catch (e) {
+                    sonuc.value = "Error";
+                }
+            }
+        </script>
+  </body>
+
+</html>
