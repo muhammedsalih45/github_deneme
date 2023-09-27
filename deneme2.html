@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
 <body>
 
     <!-- <h2>What Can JavaScript Do?</h2>
@@ -1140,32 +1142,46 @@ document.getElementById("demo").innerHTML=z;
 
 
 
-    <!-- <style>
-        .hesapMakinesi{
-            margin:0 auto;
-            width:350px;
-            height:auto;
-            background-color:slategray;
-            border-radius:5px;
-            padding:10px;
+    <style>
+        html {
+            height: 100%;
         }
-        #ekran{
+        body{
+        min-height: 100%;       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .hesapMakinesi {
+            margin: 0 auto;
+            width: 500px;
+            height: auto;
+            background-color: rgb(189, 189, 189);
+            border-radius: 360px;
+            padding: 10px;
+        }
+
+        #ekran {
             padding: 10px 0px 10px 0px;
             text-align: center;
         }
-        #sonuc{
-            padding:10px;
+
+        #sonuc {
+            padding: 10px;
             width: 90%;
             border: none;
-            border-radius:5px;
+            border-radius: 5px;
             text-align: right;
             font-size: 50px;
-            word-wrap:break-word;
+            word-wrap: break-word;
         }
-        .sayilar{
+
+        .sayilar {
             text-align: center;
         }
-        button{
+
+        button {
             width: 70px;
             height: 50px;
             margin: 4px;
@@ -1173,198 +1189,60 @@ document.getElementById("demo").innerHTML=z;
             background-color: whitesmoke;
             border: none;
             outline: none;
+            transition:all 0.4s;
         }
-
+        button:hover{
+            transform: translateY(-2px);
+        }
     </style>
+    </head>
 
-
-
-    <div class="hesapMakinesi">
-        <div id="ekran">
-            <input type="text" id="sonuc">
+    <body>
+        <div class="hesapMakinesi">
+            <div id="ekran">
+                <input type="text" id="sonuc">
+            </div>
+            <div class="sayilar">
+                <button class="btn btn-outline-success " onclick="addToDisplay('1')">1</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('2')">2</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('3')">3</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('4')">4</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('5')">5</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('6')">6</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('7')">7</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('8')">8</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('9')">9</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('0')">0</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('*')">*</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('-')">-</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('+')">+</button>
+                <button class="btn btn-outline-success " onclick="addToDisplay('/')">/</button>
+                <button class="btn btn-outline-success " onclick="calculate()">=</button>
+                <button class="btn btn-outline-success " onclick="clearEntry()">CE</button>
+                
+            </div>
         </div>
-        <div class="sayilar">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>0</button>
-            <button>*</button>
-            <button>-</button>
-            <button>+</button>
-            <button>/</button>
-            <button>=</button>
-        </div>
-    </div>
 
-    <script>
-        "use strict";
-        var _sayilar= document.getElementsByTagName("button"),_sayiUzunluk =_sayilar.length, i = 0;
-        var hesapla;
-        for(i = 0; i<_sayiUzunluk; i++){
-            _sayilar[i].onclick =hesapla;
-        }
-    </script>
+        <script>
+            "use strict";
+            var sonuc = document.getElementById("sonuc");
 
-    <script>
-        "use strict";
-        var sonuc = document.getElementById("sonuc");
-
-        function hesapla(){
-            var deger = this.innerHTML;
-
-            if(deger == "="){
-                try{
-                    sonuc.value = eval(sonuc.value);
-                }catch(e){
-                    sonuc.value = "0";
-                }
-                return;
+            function addToDisplay(value) {
+                sonuc.value += value;
             }
-            sonuc.value += deger;
-        }
-    </script>
 
-    <script>
-        "use strict";
-        var _sayilar = document.getElementsByTagName("butoon");
-        _sayiUzunluk = _sayilar.length, i = 0, sonuc = document.getElementById("sonuc");
-        for (i = 0; i<_sayiUzunluk; i++){
-            _sayilar[i].onclick = hesapla;
-        }
-
-        function hesapla(){
-            var deger = this.innerHTML;
-
-            if(deger == "="){
-                try{
-                    sonuc.value = eval(sonuc.value);
-                }catch(e){
-                    sonuc.value= "0";
-                }
-                return;
+            function clearEntry() {
+                sonuc.value = '';
             }
-            sonuc.value += deger;
-        }
-    </script> -->
 
-
-
-
-    <!-- <label for="küçük sayı :"></label>
-    <input type="number" id="sayi1">
-
-    <select id="islem">
-        <option value="topla">+</option>
-        <option value="cikar">-</option>
-        <option value="carp">*</option>
-        <option value="bol">/</option>
-    </select>
-
-    <label>büyük sayı :</label>
-    <input type="number" id="sayi2">
-
-    <button id="button">sonucunu bul</button>
-
-    <div id="sonuc"></div>
-
-    <script>
-        var sonuc;
-        function hesapla() {
-            var sayi1 = document.getElementById("sayi1").value;
-            var sayi2 = document.getElementById("sayi2").value;
-            var sayi3 = document.getElementById("islem").value;
-
-            var s1 = Number(sayi1);
-            var s2 = Number(sayi2);
-
-            if (islem == 'toplam')
-                sonuc = s1 + s2;
-            else if (islem == 'cikar')
-                sonuc = s1 - s2;
-            else if (islem == 'carp')
-                sonuc = s1 * s2;
-            else
-                sonuc = s1 / s2;
-
-                document.getElementById("sonuc").innerHTML = "sonuc : " + sonuc;
-        }
-        var hesapla;
-        var esaplaBtn=document.getElementById("buton");
-        hesaplaBtn.onclick=hesapla;
-    </script> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+            function calculate() {
+                try {
+                    sonuc.value = eval(sonuc.value);
+                } catch (e) {
+                    sonuc.value = "Error";
+                }
+            }
+        </script>
+  </body>
 
 </html>
